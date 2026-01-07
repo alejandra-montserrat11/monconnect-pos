@@ -8,4 +8,8 @@ public class Sucursal
     public string Direccion {get; set;} = null!;
 
     public ICollection<Inventario> Inventarios {get; set;} = new List<Inventario>();
+
+    public bool IsActivo { get; set; } = true;
+    public DateTime? FechaDesactivado { get; set; }
+
 }

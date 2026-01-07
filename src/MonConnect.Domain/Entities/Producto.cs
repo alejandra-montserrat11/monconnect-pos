@@ -17,6 +17,9 @@ public class Producto
 
     //activo o no activo dependiendo si se vende o no
     public bool Activo {get; set;} = true;
+    public bool IsActivo { get; set; } = true;
+    public DateTime? FechaDesactivado { get; set; }
+
 
     //relacion con inventario
     public ICollection<Inventario>Inventarios {get; set;} = new List<Inventario>();
