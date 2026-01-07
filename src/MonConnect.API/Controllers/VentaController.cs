@@ -3,6 +3,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using MonConnect.Application.Ventas.Commands;
 using MonConnect.Application.Ventas.Queries;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MonConnect.API.Controllers;
 
@@ -19,7 +20,7 @@ public class VentasController : ControllerBase
     }
 
     //Registrar una venta
-
+    [Authorize(Roles = $"{Roles.Admin},{Roles.Cajero}")]
     [HttpPost]
     public async Task<IActionResult> Create(CreateVentaCommand command)
     {

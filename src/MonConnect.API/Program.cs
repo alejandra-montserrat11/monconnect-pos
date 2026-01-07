@@ -37,6 +37,14 @@ builder.Services.AddInfrastructure();
 
 QuestPDF.Settings.License = LicenseType.Community;
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy(
+        Policies.PuedeExportarReportes,
+        Policies.ExportarReportesPolicy()
+    );
+});
+
 //fluent
 // 1. Registra todos los validadores
 builder.Services.AddValidatorsFromAssemblyContaining<CreateVentaCommandValidator>();

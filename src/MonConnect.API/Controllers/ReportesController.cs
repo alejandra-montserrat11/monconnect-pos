@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using MonConnect.Application.Ventas.Queries;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MonConnect.API.Controllers;
 
@@ -52,7 +53,7 @@ public async Task<IActionResult> GetVentasPorDia(
     return Ok(result);
 }
 
-
+[Authorize(Policy = Policies.PuedeExportarReportes)]
 [HttpGet("export/ventas/excel")]
 public async Task<IActionResult> ExportVentasExcel(
     DateTime fechaInicio,
@@ -75,6 +76,7 @@ public async Task<IActionResult> ExportVentasExcel(
     );
 }
 
+[Authorize(Policy = Policies.PuedeExportarReportes)]
 [HttpGet("export/corte-caja/excel")]
 public async Task<IActionResult> ExportCorteCajaExcel(
     DateTime fecha,
@@ -92,7 +94,7 @@ public async Task<IActionResult> ExportCorteCajaExcel(
     );
 }
 
-
+[Authorize(Policy = Policies.PuedeExportarReportes)]
 //enpoint para exportar excel de productos sin movimiento
 [HttpGet("export/productos-sin-movimiento/excel")]
 public async Task<IActionResult> ExportProductosSinMovimientoExcel(
@@ -112,7 +114,7 @@ public async Task<IActionResult> ExportProductosSinMovimientoExcel(
 }
 
 //generar pdf con informacion sobre el corte de caja
-
+[Authorize(Policy = Policies.PuedeExportarReportes)]
     [HttpGet("reporte-ejecutivo/pdf")]
 public async Task<IActionResult> DescargarReporteEjecutivoPdf(
     Guid sucursalId,
