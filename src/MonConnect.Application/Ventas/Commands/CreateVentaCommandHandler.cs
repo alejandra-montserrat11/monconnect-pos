@@ -22,7 +22,7 @@ public class CreateVentaCommandHandler : IRequestHandler<CreateVentaCommand, Gui
         var venta = new Venta
         {
             SucursalId = request.SucursalId,
-            Fecha = DateTime.Now // fecha aquí
+            Fecha = DateTime.UtcNow // fecha aquí
         };
 
         decimal total = 0;

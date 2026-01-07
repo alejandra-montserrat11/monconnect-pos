@@ -176,3 +176,6 @@ C:\Users\valer\Downloads\MonConnect\src\MonConnect.API\bin\Debug\net8.0\runtimes
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.API\bin\Debug\net8.0\runtimes\win-x86\native\libwinpthread-1.dll
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.API\bin\Debug\net8.0\runtimes\win-x86\native\qpdf.dll
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.API\bin\Debug\net8.0\runtimes\win-x86\native\zlib1.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
