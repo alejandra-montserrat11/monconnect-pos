@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonConnect.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c058456c8d62760a28dec590e7290a6d57bcc8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ae704b11b74734afef3e1e4ca82feadfdc69fec")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonConnect.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonConnect.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
