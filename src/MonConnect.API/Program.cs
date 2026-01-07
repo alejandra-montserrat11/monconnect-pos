@@ -5,6 +5,8 @@ using MonConnect.Application.Common.Interfaces;
 using MonConnect.Infrastructure.Persistence;
 using MonConnect.Infrastructure;
 
+using QuestPDF.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // 🔹 Controllers
@@ -29,6 +31,8 @@ builder.Services.AddMediatR(cfg =>
 
 // 👇 REGISTRA INFRASTRUCTURE
 builder.Services.AddInfrastructure();
+
+QuestPDF.Settings.License = LicenseType.Community;
 
 var app = builder.Build();
 

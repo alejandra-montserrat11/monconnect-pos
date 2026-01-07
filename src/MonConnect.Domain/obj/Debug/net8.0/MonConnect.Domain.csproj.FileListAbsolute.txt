@@ -9,3 +9,4 @@ C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net8.0\MonCo
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net8.0\refint\MonConnect.Domain.dll
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net8.0\MonConnect.Domain.pdb
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net8.0\ref\MonConnect.Domain.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net8.0\MonConnect.Domain.sourcelink.json

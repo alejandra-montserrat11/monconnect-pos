@@ -13,3 +13,4 @@ C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net8.0\
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net8.0\refint\MonConnect.Application.dll
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net8.0\MonConnect.Application.pdb
 C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net8.0\ref\MonConnect.Application.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net8.0\MonConnect.Application.sourcelink.json

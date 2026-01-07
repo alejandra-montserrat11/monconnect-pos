@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DpjzwyunNnA=",
+  "dgSpecHash": "VPMPVvWd2Do=",
   "success": true,
   "projectFilePath": "C:\\Users\\valer\\Downloads\\MonConnect\\src\\MonConnect.Infrastructure\\MonConnect.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\valer\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\valer\\.nuget\\packages\\npgsql\\8.0.6\\npgsql.8.0.6.nupkg.sha512",
     "C:\\Users\\valer\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.11\\npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\questpdf\\2025.12.1\\questpdf.2025.12.1.nupkg.sha512",
     "C:\\Users\\valer\\.nuget\\packages\\rbush.signed\\4.0.0\\rbush.signed.4.0.0.nupkg.sha512",
     "C:\\Users\\valer\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
     "C:\\Users\\valer\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
@@ -62,7 +63,7 @@
     {
       "code": "NU1608",
       "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 13.1.0 was resolved.",
+      "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requiere MediatR (>= 11.0.0 && < 12.0.0), pero la versión MediatR 13.1.0 ya se resolvió.",
       "projectPath": "C:\\Users\\valer\\Downloads\\MonConnect\\src\\MonConnect.Infrastructure\\MonConnect.Infrastructure.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\valer\\Downloads\\MonConnect\\src\\MonConnect.Infrastructure\\MonConnect.Infrastructure.csproj",

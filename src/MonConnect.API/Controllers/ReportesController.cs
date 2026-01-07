@@ -1,6 +1,7 @@
 
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using MonConnect.Application.Ventas.Queries;
 
 namespace MonConnect.API.Controllers;
 
@@ -9,10 +10,12 @@ namespace MonConnect.API.Controllers;
 public class ReportesController : ControllerBase
 {
     private readonly IMediator _mediator;
+    private readonly IPdfGenerator _pdfGenerator;
 
-    public ReportesController(IMediator mediator)
+    public ReportesController(IMediator mediator, IPdfGenerator pdfGenerator)
     {
         _mediator = mediator;
+        _pdfGenerator = pdfGenerator;
     }
 
     [HttpGet("productos-sin-movimiento")]
@@ -105,6 +108,35 @@ public async Task<IActionResult> ExportProductosSinMovimientoExcel(
         file.Content,
         file.ContentType,
         file.FileName
+    );
+}
+
+//generar pdf con informacion sobre el corte de caja
+
+    [HttpGet("reporte-ejecutivo/pdf")]
+public async Task<IActionResult> DescargarReporteEjecutivoPdf(
+    Guid sucursalId,
+    DateTime fecha)
+{
+    var corte = await _mediator.Send(new GetCorteCajaQuery
+    {
+        SucursalId = sucursalId,
+        Fecha = fecha
+    });
+
+    var reporte = await _mediator.Send(new GetReporteVentasQuery
+    {
+        FechaInicio = fecha.Date,
+        FechaFin = fecha.Date.AddDays(1),
+        SucursalId = sucursalId
+    });
+
+    var pdf = _pdfGenerator.GenerarReporteEjecutivoPdf(corte, reporte);
+
+    return File(
+        pdf,
+        "application/pdf",
+        $"ReporteEjecutivo_{fecha:yyyyMMdd}.pdf"
     );
 }
 
