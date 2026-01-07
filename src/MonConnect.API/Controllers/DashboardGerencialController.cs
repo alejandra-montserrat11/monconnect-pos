@@ -1,6 +1,7 @@
 
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 [ApiController]
 [Route("api/dashboardGerencial")]
@@ -12,7 +13,8 @@ public class DashboardGerencialController : ControllerBase
     {
         _mediator = mediator;
     }
-
+    
+    [Authorize(Roles = $"{Roles.Admin},{Roles.Supervisor}")]
     [HttpGet("{sucursalId}")]
     public async Task<IActionResult> Get(Guid sucursalId)
     {
