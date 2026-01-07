@@ -4,8 +4,11 @@ using MonConnect.Application.Products.Commands;
 using MonConnect.Application.Common.Interfaces;
 using MonConnect.Infrastructure.Persistence;
 using MonConnect.Infrastructure;
+using MonConnect.Application.Ventas;
+using MonConnect.Application.Common.Behaviors;
 
 using QuestPDF.Infrastructure;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +36,14 @@ builder.Services.AddMediatR(cfg =>
 builder.Services.AddInfrastructure();
 
 QuestPDF.Settings.License = LicenseType.Community;
+
+//fluent
+// 1. Registra todos los validadores
+builder.Services.AddValidatorsFromAssemblyContaining<CreateVentaCommandValidator>();
+
+// 2. Registra el Behavior de MediatR
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
 
 var app = builder.Build();
 

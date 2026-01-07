@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonConnect.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfe5d83cb456fb9194eae41d8ddf45f5357b90bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64d72822ee3e2af1c4a3f673c90bfd9468f6eb77")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonConnect.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonConnect.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
