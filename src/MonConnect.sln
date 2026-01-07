@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonConnect.Domain", "MonConnect.Domain\MonConnect.Domain.csproj", "{B5AE5032-633A-4F5B-9600-7803976D3120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonConnect.Application", "MonConnect.Application\MonConnect.Application.csproj", "{98D9CBEA-4FD3-469D-AFF7-4B1EFA59AB11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonConnect.Infrastructure", "MonConnect.Infrastructure\MonConnect.Infrastructure.csproj", "{FE2730E1-C70A-4E5B-9F41-5F39F2987AB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonConnect.API", "MonConnect.API\MonConnect.API.csproj", "{3D57CB8A-7C7C-497D-8655-CF3FFCC941CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5AE5032-633A-4F5B-9600-7803976D3120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AE5032-633A-4F5B-9600-7803976D3120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AE5032-633A-4F5B-9600-7803976D3120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AE5032-633A-4F5B-9600-7803976D3120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D9CBEA-4FD3-469D-AFF7-4B1EFA59AB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D9CBEA-4FD3-469D-AFF7-4B1EFA59AB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D9CBEA-4FD3-469D-AFF7-4B1EFA59AB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D9CBEA-4FD3-469D-AFF7-4B1EFA59AB11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2730E1-C70A-4E5B-9F41-5F39F2987AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2730E1-C70A-4E5B-9F41-5F39F2987AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2730E1-C70A-4E5B-9F41-5F39F2987AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2730E1-C70A-4E5B-9F41-5F39F2987AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D57CB8A-7C7C-497D-8655-CF3FFCC941CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D57CB8A-7C7C-497D-8655-CF3FFCC941CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D57CB8A-7C7C-497D-8655-CF3FFCC941CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D57CB8A-7C7C-497D-8655-CF3FFCC941CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

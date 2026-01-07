@@ -1,0 +1,15 @@
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\bin\Debug\net10.0\MonConnect.Application.deps.json
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\bin\Debug\net10.0\MonConnect.Application.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\bin\Debug\net10.0\MonConnect.Application.pdb
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\bin\Debug\net10.0\MonConnect.Domain.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\bin\Debug\net10.0\MonConnect.Domain.pdb
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\MonConnect.Application.csproj.AssemblyReference.cache
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\MonConnect.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\MonConnect.Application.AssemblyInfoInputs.cache
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\MonConnect.Application.AssemblyInfo.cs
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\MonConnect.Application.csproj.CoreCompileInputs.cache
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\MonConne.DFE3F043.Up2Date
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\MonConnect.Application.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\refint\MonConnect.Application.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\MonConnect.Application.pdb
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Application\obj\Debug\net10.0\ref\MonConnect.Application.dll

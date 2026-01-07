@@ -1,0 +1,11 @@
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\bin\Debug\net10.0\MonConnect.Domain.deps.json
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\bin\Debug\net10.0\MonConnect.Domain.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\bin\Debug\net10.0\MonConnect.Domain.pdb
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net10.0\MonConnect.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net10.0\MonConnect.Domain.AssemblyInfoInputs.cache
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net10.0\MonConnect.Domain.AssemblyInfo.cs
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net10.0\MonConnect.Domain.csproj.CoreCompileInputs.cache
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net10.0\MonConnect.Domain.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net10.0\refint\MonConnect.Domain.dll
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net10.0\MonConnect.Domain.pdb
+C:\Users\valer\Downloads\MonConnect\src\MonConnect.Domain\obj\Debug\net10.0\ref\MonConnect.Domain.dll

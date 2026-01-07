@@ -1,0 +1,47 @@
+using Microsoft.EntityFrameworkCore;
+using MediatR;
+using MonConnect.Application.Products.Commands;
+using MonConnect.Application.Common.Interfaces;
+using MonConnect.Infrastructure.Persistence;
+using MonConnect.Infrastructure;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// 🔹 Controllers
+builder.Services.AddControllers();
+
+// 🔹 Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// 🔹 DbContext
+builder.Services.AddDbContext<MonConnectDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
+
+// 🔹 Clean Architecture bridge
+builder.Services.AddScoped<IApplicationDbContext>(
+    provider => provider.GetRequiredService<MonConnectDbContext>());
+
+// 🔹 MediatR
+builder.Services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssembly(typeof(CreateProductCommand).Assembly));
+
+// 👇 REGISTRA INFRASTRUCTURE
+builder.Services.AddInfrastructure();
+
+var app = builder.Build();
+
+// 🔹 Middleware
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+// 🔹 ESTO HACE QUE APAREZCAN TUS CONTROLLERS
+app.MapControllers();
+
+app.Run();
