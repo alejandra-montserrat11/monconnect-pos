@@ -21,4 +21,18 @@ public class UsuariosController : ControllerBase
     {
         return await _mediator.Send(command);
     }
+
+    [HttpPatch("{id}/desactivar")]
+    public async Task<ActionResult> Desactivar(Guid id)
+    {
+    await _mediator.Send(new DesactivarUsuarioCommand(id));
+    return NoContent();
+    }
+    
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> Delete(Guid id)
+    {
+
+    return Ok("Usuario eliminado");
+    }
 }

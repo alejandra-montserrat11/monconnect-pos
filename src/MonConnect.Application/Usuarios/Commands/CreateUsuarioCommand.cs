@@ -1,5 +1,6 @@
 using MediatR;
 using MonConnect.Application.Common.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using MonConnect.Domain.Entities;
 using MonConnect.Domain.Constants;
 
@@ -23,7 +24,14 @@ public class CreateUsuarioCommandHandler : IRequestHandler<CreateUsuarioCommand,
     public async Task<Guid> Handle(CreateUsuarioCommand request, CancellationToken cancellationToken)
     {
 
-        
+        // 1. Verificar si el email ya existe
+    var existe = await _context.Usuarios
+        .AnyAsync(u => u.Email == request.Email, cancellationToken);
+
+    if (existe)
+    {
+        throw new Exception("El correo electrónico ya está registrado.");
+    }  
         // 1. Encriptar la contraseña con BCrypt
         var passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
