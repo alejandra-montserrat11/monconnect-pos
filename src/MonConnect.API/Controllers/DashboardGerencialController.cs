@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using MonConnect.Domain.Constants;
 
 [ApiController]
 [Route("api/dashboardGerencial")]

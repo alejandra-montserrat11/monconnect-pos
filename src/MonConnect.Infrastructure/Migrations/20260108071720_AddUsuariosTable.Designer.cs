@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MonConnect.Infrastructure.Persistence;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MonConnect.Infrastructure.Migrations
 {
     [DbContext(typeof(MonConnectDbContext))]
-    partial class MonConnectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260108071720_AddUsuariosTable")]
+    partial class AddUsuariosTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -225,16 +228,6 @@ namespace MonConnect.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("a1b2c3d4-e5f6-7890-abcd-ef1234567890"),
-                            Email = "admin@monconnect.com",
-                            IsActivo = true,
-                            PasswordHash = "$2a$11$W/XbNQlTTqQRVqRHDpiCnepy82iJB4KzfcYL6iNve7vo/9UcDmCmO",
-                            Rol = "Admin"
-                        });
                 });
 
             modelBuilder.Entity("MonConnect.Domain.Entities.Inventario", b =>
