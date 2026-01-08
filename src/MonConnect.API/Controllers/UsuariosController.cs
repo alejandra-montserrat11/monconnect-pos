@@ -5,6 +5,8 @@ using MediatR;
 using MonConnect.Application.Usuarios.Commands;
 using MonConnect.Domain.Constants;
 
+using MonConnect.Application.Usuarios.Queries;
+
 namespace MonConnect.API.Controllers;
 
 [ApiController]
@@ -34,5 +36,12 @@ public class UsuariosController : ControllerBase
     {
 
     return Ok("Usuario eliminado");
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<List<UsuarioDto>>> GetAll()
+    {
+        var usuarios = await _mediator.Send(new GetUsuariosQuery());
+        return Ok(usuarios);
     }
 }
