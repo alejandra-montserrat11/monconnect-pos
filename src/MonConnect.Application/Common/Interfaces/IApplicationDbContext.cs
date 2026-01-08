@@ -16,6 +16,8 @@ namespace MonConnect.Application.Common.Interfaces
 
         DbSet<Pago> Pagos { get; }
 
+        DbSet<Usuario> Usuarios { get; }
+
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

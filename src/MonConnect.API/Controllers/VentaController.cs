@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using MonConnect.Application.Ventas.Commands;
 using MonConnect.Application.Ventas.Queries;
 using Microsoft.AspNetCore.Authorization;
+using MonConnect.Domain.Constants;
 
 namespace MonConnect.API.Controllers;
 

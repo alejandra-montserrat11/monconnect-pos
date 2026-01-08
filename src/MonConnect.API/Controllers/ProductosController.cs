@@ -2,6 +2,8 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using MonConnect.Application.Products.Commands;
 using MonConnect.Application.Products.Queries;
+using Microsoft.AspNetCore.Authorization;
+using MonConnect.Domain.Constants;
 
 namespace MonConnect.API.Controllers
 {
@@ -17,6 +19,7 @@ namespace MonConnect.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = Roles.Admin)]
         public async Task<IActionResult> Create(CreateProductCommand command)
         {
             var id = await _mediator.Send(command);
@@ -34,6 +37,7 @@ namespace MonConnect.API.Controllers
    //Actualizar productos
    //Actualizar informacion
    [HttpPut("{id}")]
+   [Authorize(Roles = Roles.Admin)]
    public async Task<ActionResult> Update(
     Guid id,
     UpdateProductCommand command)
@@ -45,6 +49,7 @@ namespace MonConnect.API.Controllers
 
     //Desactivar producto
     [HttpDelete("{id}")]
+    [Authorize(Roles = Roles.Admin)]
     public async Task<IActionResult> Delete(Guid id)
     {
     var result = await _mediator.Send(new DeleteProductoCommand(id));
