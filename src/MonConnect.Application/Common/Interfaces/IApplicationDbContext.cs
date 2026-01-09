@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MonConnect.Domain.Entities;
 
+
 namespace MonConnect.Application.Common.Interfaces
 {
     public interface IApplicationDbContext
@@ -17,6 +18,8 @@ namespace MonConnect.Application.Common.Interfaces
         DbSet<Pago> Pagos { get; }
 
         DbSet<Usuario> Usuarios { get; }
+
+        DbSet<Movimiento> Movimientos { get; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }

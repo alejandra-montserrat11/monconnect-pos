@@ -19,6 +19,8 @@ using Microsoft.OpenApi.Models;
 using MonConnect.API.Auth;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
+using MonConnect.Infrastructure.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. CONFIGURACIÓN JWT (Extraer datos de appsettings.json)
@@ -86,6 +88,10 @@ builder.Services.AddAuthentication(options =>
             Encoding.UTF8.GetBytes(jwtSettings.Secret))
     };
 });
+
+//Registrar current service
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+builder.Services.AddHttpContextAccessor();
 
 // MediatR
 builder.Services.AddMediatR(cfg =>

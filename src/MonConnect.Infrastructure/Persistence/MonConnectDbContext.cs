@@ -17,6 +17,8 @@ public class MonConnectDbContext : DbContext, IApplicationDbContext
     public DbSet<VentaDetalle> VentaDetalle { get; set; }
     public DbSet<Pago> Pagos { get; set; }
     public DbSet<Usuario> Usuarios { get; set; }
+    public DbSet<Movimiento> Movimientos { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
