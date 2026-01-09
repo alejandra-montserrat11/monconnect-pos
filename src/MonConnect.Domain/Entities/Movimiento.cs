@@ -12,6 +12,7 @@ public class Movimiento
     public int Cantidad { get; set; }
     public DateTime Fecha { get; set; } = DateTime.UtcNow;
     public string? Observacion { get; set; }
+    public string UsuarioNombre {get; set;} = string.Empty;
 
     // Propiedades de navegación
     public Producto Producto { get; set; } = null!;
